@@ -1,7 +1,7 @@
 import _ from "lodash";
 import { useEffect, useState } from "react";
 
-const usePagination = ({ url, pageSize }) => {
+const usePagination = (url, pageSize) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const getData = async () => {
